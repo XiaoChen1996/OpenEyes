@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Dialog通用风格-->
+    <style name="DialogCommonStyle" parent="AlertDialog.AppCompat">
+        <!--Dialog的windowFrame框为无-->
+        <item name="android:windowFrame">@null</item>
+        <!-- 取消标题栏，如果在代码中setTitle的话会无效 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否浮现在activity之上-->
+<!--        <item name="android:windowIsFloating">true</item>-->
+        <!--是否半透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--是否允许对话框的背景变暗-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--设置dialog的背景-->
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!--dialog从底部弹出动画-->
+    <style name="dialogFromBottomAnimator">
+        <item name="android:windowEnterAnimation">@anim/dialog_from_bottom_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_to_bottom_out</item>
+    </style>
+
+
+
+</resources>

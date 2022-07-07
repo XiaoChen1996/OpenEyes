@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBarBase"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_50"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvToolBarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18"
+            app:layout_constraintBottom_toBottomOf="@+id/toolBarBase"
+            app:layout_constraintEnd_toEndOf="@+id/toolBarBase"
+            app:layout_constraintStart_toStartOf="@+id/toolBarBase"
+            app:layout_constraintTop_toTopOf="@+id/toolBarBase" />
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/dp_18"
+            android:layout_height="@dimen/dp_18"
+            android:layout_marginStart="@dimen/dp_12"
+            android:src="@drawable/vector_black_back"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/toolBarBase"
+            app:layout_constraintStart_toStartOf="@+id/toolBarBase"
+            app:layout_constraintTop_toTopOf="@+id/toolBarBase" />
+
+        <ImageView
+            android:id="@+id/ivRightImg"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_0"
+            android:layout_marginEnd="@dimen/dp_12"
+            app:layout_constraintBottom_toBottomOf="@+id/ivBack"
+            app:layout_constraintEnd_toEndOf="@+id/toolBarBase"
+            app:layout_constraintTop_toTopOf="@+id/ivBack" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

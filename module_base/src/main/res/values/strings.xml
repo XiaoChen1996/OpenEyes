@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--通用-->
+    <string name="ok">OK</string>
+    <string name="sure">确定</string>
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+    <string name="report">举报</string>
+    <string name="block">拉黑</string>
+
+    <!--接口错误提示-->
+    <string name="connection_time_out">Connection timed out</string>
+    <string name="check_network_info">The network status is not available. Please check the network.</string>
+
+</resources>
